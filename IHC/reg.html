@@ -152,6 +152,16 @@
                           <option>19</option>
                           <option>20</option>
                         </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputEmail4" class="form-label">Data</label>
+                        <input type="text" class="date form-control" style="width: 200px" />
+ 
+    <script type="text/javascript">
+      $(".date").datepicker({
+        format: "dd-mm-yyyy",
+      });
+    </script>
                       </div>
                     <div class="col-md-2">
                       <label for="inputEmail4" class="form-label">Horário de ligar</label>
@@ -169,7 +179,22 @@
                         <label for="inputAddress" class="form-label">Nível de vazão</label>
                         <input type="text" class="form-control" id="inputAddress" placeholder="0,0m3">
                     </div>
+                    <div class="col-4">
+                        <label for="inputAddress" class="form-label">Repetições</label>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                              <input type="radio" name="options" id="option1" autocomplete="off" checked> Não repete
+                            </label>
+                            <label class="btn btn-secondary">
+                              <input type="radio" name="options" id="option2" autocomplete="off"> Todo dia
+                            </label>
+                            <label class="btn btn-secondary">
+                              <input type="radio" name="options" id="option3" autocomplete="off"> Toda semana
+                            </label>
+                          </div>
+                    </div>
                     <div class="col-12">
+
                         <div class="btn-group position-absolute bottom-10 end-0" role="group" style="margin-right: 10px;">
                             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
